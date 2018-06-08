@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border_background"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".EditBabyProfile">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:padding="16dp"
+        android:src="@drawable/baby_ava"
+        android:id="@+id/editbaby_cim_baby_ava"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#000"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editbaby_et_baby_name"
+            android:layout_margin="16dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:hint="Please Input Baby Name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/editbaby_tv_baby_date_change"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:text="Tape Me!"
+            android:background="@drawable/border_background"
+            android:textColor="#000"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/editbaby_tv_ok"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Ok!"
+                android:padding="10dp"
+                android:background="@drawable/border_background"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/editbaby_tv_cancel"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Cancel"
+                android:padding="10dp"
+                android:background="@drawable/border_background"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
